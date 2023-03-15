@@ -1,0 +1,46 @@
+/* ========== Conteúdo Principal =========*/
+
+.containerPrincipal{
+    max-width: 1680px;
+    margin: 0 auto;
+}
+.conteudoPrincipal-equipamentos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.conteudoPrincipal-equipamentos-box{
+    background:transparent;
+    width: 28%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px #2B2B2B;
+    margin-top: 30px;
+}
+
+.conteudoPrincipal-equipamentos-box:hover {
+	box-shadow: 0 5px 30px #2B2B2B;
+}
+
+.equipamentoLink{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.equipamentoImg{
+    width: 50%;
+    height: 70%;
+    margin: 2rem 0;
+    
+}
+
+.equipamentoNome{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+
+}

@@ -1,19 +1,39 @@
-body {
-	background-color: #aaabac;
+/* ========== GLOBAL ==========*/
+
+html,body {
+	/* background-color: #aaabac; */
 	font-family: 'Poppins', sans-serif;
-    max-width: 1680px;
+
 }
 
-.container {
+.bg{
+    background: url('../img/bg.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto
+}
+
+
+
+/* ========== MENU ==========*/
+
+.cabecalhoPrincipal{
+    background-color: #000000;
+    
+}
+
+.containerMenu {
     display: flex;
+    margin: 0 auto;
     justify-content:space-between;
     align-items: center;
-    background-color: #000;
     padding: 0.8rem 2rem;
     color: #aaabac;
+    max-width: 1680px;
+    
 }
 
-.container img{
+.containerMenu img{
     max-width:130px;
     max-height:50px;
     width: auto;
@@ -41,7 +61,26 @@ body {
 }
 
 
+/* ========== PRINCIPAL ==========*/
+.conteudoPrincipal {
+    padding: 1.3rem;
+}
 
+.titulo {
+    font-weight: bold;
+    font-size: 42px;;
+    text-align: center;
+}
+
+.subtitulo {
+    font-size: 24px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+/* ========== RESPONSIVO ==========*/
 
 @media screen and (max-width: 740px){
     .container--desktop{
