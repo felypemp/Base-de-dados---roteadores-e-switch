@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/bibliotecaComandos.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -94,8 +95,46 @@
             </ul>
         </div>
 
+        <div class="modal" id="modal">
+            <div class="modal-conteudo">
+                <header class="modal-header">
+                    <h2>Equipamento:</h2>
+                    <span class="modal-fechar" id="modalFechar">&#10006;</span>
+                </header>
 
-
+                <table class="tabela esconder" id="edd">
+                    <caption class="tituloTabela">Datacom EDD</caption>
+                    <tr >
+                        <th>Descrição do comando</th>
+                        <th>Linha de comando</th>
+                    </tr>
+                    <tr>
+                        <td>Mostra as interfaces</td>
+                        <td>show interfaces table configuration</td>
+                    </tr>
+                    <tr>
+                        <td>mostra a banda utilizadas pelas interfaces</td>
+                        <td>show interface table utilization bandwicht</td>
+                    </tr>
+                    <tr>
+                        <td>mostra o log da porta especificada (UPTIME)</td>
+                        <td>Show log ram | include 1/26</td>
+                    </tr>
+                    <tr>
+                        <td>mostra detalhes da interfana porta (Temperatura, TX, RX)</td>
+                        <td>show hardware-status tranceivers detail 1/26</td>
+                    </tr>
+                    <tr>
+                        <td>mostra macs conectados na porta</td>
+                        <td>show mac-address-table  interface ethernet 1/26</td>
+                    </tr>
+                    <tr>
+                        <td>mostra tabela de erro das interfaces</td>
+                        <td>Show interface table counter error</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </main>
     
 </body>
