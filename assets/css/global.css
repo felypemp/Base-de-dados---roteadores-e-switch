@@ -81,6 +81,8 @@ html,body {
 
 /* ========== RESPONSIVO ==========*/
 
+
+
 @media screen and (max-width: 740px){
     .container--desktop{
         display: none;
@@ -114,5 +116,25 @@ html,body {
         text-align: center;
         font-size: 16px;
         padding: 10px;
+    }
+}
+
+@media screen and (max-width: 648px){
+    .titulo {
+        font-size: 32px;;
+    }
+    
+    .subtitulo{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 428px){
+    .titulo {
+        font-size: 28px;;
+    }
+    
+    .subtitulo{
+        font-size: 16px;
     }
 }

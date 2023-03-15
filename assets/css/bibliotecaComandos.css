@@ -47,3 +47,31 @@
     margin-bottom: 1rem;
 
 }
+
+/*=========== RESPONSIVO ===========*/
+
+@media screen and (max-width: 922px){
+
+    .conteudoPrincipal-equipamentos-box{
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width: 648px){
+
+    .conteudoPrincipal-equipamentos-box{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 428px){
+
+    .conteudoPrincipal-equipamentos-box{
+        width: 60%;
+    }
+
+     .dm4270 h3{
+        font-size: 15px;
+    }
+}
