@@ -3,6 +3,7 @@
 .containerPrincipal{
     max-width: 1680px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 .conteudoPrincipal-equipamentos{
     display: flex;
@@ -11,12 +12,15 @@
 }
 
 .conteudoPrincipal-equipamentos-box{
-    background:transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: transparent;
     width: 28%;
-    height: auto;
+    height: 250px;
     border-radius: 5px;
     box-shadow: 0 5px 10px #2B2B2B;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .conteudoPrincipal-equipamentos-box:hover {
@@ -32,8 +36,7 @@
 }
 
 .equipamentoImg{
-    width: 50%;
-    height: 70%;
+    width: 70%;
     margin: 2rem 0;
     
 }
