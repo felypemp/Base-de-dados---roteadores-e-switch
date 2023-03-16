@@ -52,42 +52,42 @@
 
             <ul class="conteudoPrincipal-equipamentos">
                 <li class="conteudoPrincipal-equipamentos-box">
-                    <a class="equipamentoLink" href="#edd">
+                    <a class="equipamentoLink" href="#" id="edd">
                         <img class="equipamentoImg" src="./assets/img/edd.png" alt="Equipamento EDD">
                         <h3 class="equipamentoNome">EDD</h3>
                     </a>
                 </li>
                 <li class="conteudoPrincipal-equipamentos-box">
-                    <a class="equipamentoLink" href="#edd">
+                    <a class="equipamentoLink" href="#" id="cisco">
                         <img class="equipamentoImg" src="./assets/img/cisco.png" alt="Equipamento EDD">
                         <h3 class="equipamentoNome">CISCO</h3>
                     </a>
                 </li>
                 <li class="conteudoPrincipal-equipamentos-box">
-                    <a class="equipamentoLink" href="#edd">
+                    <a class="equipamentoLink" href="#" id="raisecom">
                         <img class="equipamentoImg" src="./assets/img/raisecom2.png" alt="Equipamento EDD">
                         <h3 class="equipamentoNome">RAISECOM</h3>
                     </a>
                 <li class="conteudoPrincipal-equipamentos-box">
-                    <a class="equipamentoLink" href="#edd">
+                    <a class="equipamentoLink" href="#" id="datacom4100">
                         <img class="equipamentoImg" src="./assets/img/datacom4100.png" alt="Equipamento EDD">
                         <h3 class="equipamentoNome">DATACOM 4100</h3>
                     </a>
                 </li>
                 <li class="conteudoPrincipal-equipamentos-box">
-                    <a class="equipamentoLink dm4270" href="#dm4270">
+                    <a class="equipamentoLink dm4270" href="#" id="datacom4170">
                         <img class="equipamentoImg" src="./assets/img/dm4270.png" alt="Equipamento EDD">
                         <h3 class="equipamentoNome ">DATACOM 4170 / 4270</h3>
                     </a>
                 </li>
                 <li class="conteudoPrincipal-equipamentos-box">
-                    <a class="equipamentoLink" href="#edd">
+                    <a class="equipamentoLink" href="#" id="datacom4770">
                         <img class="equipamentoImg" src="./assets/img/dm4770.png" alt="Equipamento EDD">
                         <h3 class="equipamentoNome">DATACOM 4770</h3>
                     </a>
                 </li>
                 <li class="conteudoPrincipal-equipamentos-box">
-                    <a class="equipamentoLink" href="#edd">
+                    <a class="equipamentoLink" href="#" id="qfx">
                         <img class="equipamentoImg" src="./assets/img/qfx.png" alt="Equipamento EDD">
                         <h3 class="equipamentoNome">QFX</h3>
                     </a>
@@ -102,7 +102,7 @@
                     <span class="modal-fechar" id="modalFechar">&#10006;</span>
                 </header>
 
-                <table class="tabela esconder" id="edd">
+                <table class="tabela " id="tbEdd">
                     <caption class="tituloTabela">Datacom EDD</caption>
                     <tr >
                         <th>Descrição do comando</th>
@@ -133,6 +133,39 @@
                         <td>Show interface table counter error</td>
                     </tr>
                 </table>
+
+                <table class="tabela" id="tbCisco">
+                    <caption class="tituloTabela">Swich CISCO</caption>
+                    <tr >
+                        <th>Descrição do comando</th>
+                        <th>Linha de comando</th>
+                    </tr>
+                    <tr>
+                        <td>Mostra as interfaces</td>
+                        <td>show interfaces table configuration</td>
+                    </tr>
+                    <tr>
+                        <td>mostra a banda utilizadas pelas interfaces</td>
+                        <td>show interface table utilization bandwicht</td>
+                    </tr>
+                    <tr>
+                        <td>mostra o log da porta especificada (UPTIME)</td>
+                        <td>Show log ram | include 1/26</td>
+                    </tr>
+                    <tr>
+                        <td>mostra detalhes da interfana porta (Temperatura, TX, RX)</td>
+                        <td>show hardware-status tranceivers detail 1/26</td>
+                    </tr>
+                    <tr>
+                        <td>mostra macs conectados na porta</td>
+                        <td>show mac-address-table  interface ethernet 1/26</td>
+                    </tr>
+                    <tr>
+                        <td>mostra tabela de erro das interfaces</td>
+                        <td>Show interface table counter error</td>
+                    </tr>
+                </table>
+                
             </div>
         </div>
     </main>
@@ -144,6 +177,7 @@
             <a href="https://github.com/felypemp" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
     </footer>
-    
+
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

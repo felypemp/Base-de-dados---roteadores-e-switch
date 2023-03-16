@@ -9,6 +9,11 @@
     z-index: -1;
 }
 
+.modal.ativo{
+    opacity: 1;
+    z-index: 1;
+}
+
 .modal-conteudo{
     display: flex;
     flex-direction: column;
@@ -86,5 +91,9 @@ th, td{
 }
 
 .tabela tr:hover{
-    background-color: var(--secundary-color)
+    background-color: #FFF1CC
+}
+
+.esconder{
+    display: none;
 }
