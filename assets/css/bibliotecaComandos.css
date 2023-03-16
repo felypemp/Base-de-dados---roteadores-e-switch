@@ -1,10 +1,6 @@
 /* ========== Conteúdo Principal =========*/
 
-.containerPrincipal{
-    max-width: 1680px;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
+
 .conteudoPrincipal-equipamentos{
     display: flex;
     flex-wrap: wrap;

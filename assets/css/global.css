@@ -12,13 +12,27 @@ html,body {
     height: auto
 }
 
+.containerPrincipal{
+    max-width: 1680px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 1.3rem;
+}
+
 footer{
     width:100%;
     text-align: center;
     font-weight: 200;
     font-style: italic;
     padding-top: 30px;
-    
+    font-size: 16px;
+}
+
+footer a{
+    margin-left: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
 }
 
 /* ========== MENU ==========*/
@@ -30,12 +44,12 @@ footer{
 
 .containerMenu {
     display: flex;
-    margin: 0 auto;
+    
     justify-content:space-between;
     align-items: center;
     padding: 0.8rem 2rem;
     color: #aaabac;
-    max-width: 1680px;
+    ;
     
 }
 
@@ -68,9 +82,6 @@ footer{
 
 
 /* ========== PRINCIPAL ==========*/
-.conteudoPrincipal {
-    padding: 1.3rem;
-}
 
 .titulo {
     font-weight: bold;
