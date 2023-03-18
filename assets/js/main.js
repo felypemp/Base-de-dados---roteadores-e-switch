@@ -16,92 +16,67 @@ const abrirModal = () => {
 
 const fecharModal = () => {
     document.getElementById('modal').classList.remove('ativo');
+    document.getElementById('tbCisco').classList.add('esconder');
+    document.getElementById('tbEdd').classList.add('esconder');
+    document.getElementById('tbRaisecom').classList.add('esconder');
+    document.getElementById('tbDm4100').classList.add('esconder');
+    document.getElementById('tbDm4270').classList.add('esconder');
+    document.getElementById('tbDm4770').classList.add('esconder');
+    document.getElementById('tbQfx').classList.add('esconder');
 }
 
 
 /*========== FUNÇÃO ==========*/
 
-
+const atualizarTabela = (tabela) => {
+    abrirModal();
+    if(tabela == 'tbEdd'){
+        document.getElementById('tbEdd').classList.remove('esconder');
+    } else if (tabela == 'tbCisco') {
+        document.getElementById('tbCisco').classList.remove('esconder');
+    } else if (tabela == 'tbRaisecom'){
+        document.getElementById('tbRaisecom').classList.remove('esconder');
+    } else if (tabela == 'tbDm4100'){
+        document.getElementById('tbDm4100').classList.remove('esconder');
+    } else if (tabela == 'tbDm4270'){
+        document.getElementById('tbDm4270').classList.remove('esconder');
+    } else if (tabela == 'tbDm4770'){
+        document.getElementById('tbDm4770').classList.remove('esconder');
+    } else if (tabela == 'tbQfx'){
+        document.getElementById('tbQfx').classList.remove('esconder');
+    }
+}
 
 /*========== EVENTOS ==========*/
 
 Edd.addEventListener('click', () => {
-    abrirModal();
-    document.getElementById('tbEdd').classList.remove('esconder');
-    document.getElementById('tbCisco').classList.add('esconder');
-    document.getElementById('tbRaisecom').classList.add('esconder');
-    document.getElementById('tbDm4100').classList.add('esconder');
-    document.getElementById('tbDm4770').classList.add('esconder');
-    document.getElementById('tbQfx').classList.add('esconder');
+    atualizarTabela('tbEdd');
+    
 });
 
 Cisco.addEventListener('click', () => {
-    abrirModal();
-    document.getElementById('tbCisco').classList.remove('esconder');
-    document.getElementById('tbEdd').classList.add('esconder');
-    document.getElementById('tbRaisecom').classList.add('esconder');
-    document.getElementById('tbDm4100').classList.add('esconder');
-    document.getElementById('tbDm4270').classList.add('esconder');
-    document.getElementById('tbDm4770').classList.add('esconder');
-    document.getElementById('tbQfx').classList.add('esconder');
+    atualizarTabela('tbCisco')
 })
 
 Raisecom.addEventListener('click', () => {
-    abrirModal();
-    document.getElementById('tbCisco').classList.add('esconder');
-    document.getElementById('tbEdd').classList.add('esconder');
-    document.getElementById('tbRaisecom').classList.remove('esconder');
-    document.getElementById('tbDm4100').classList.add('esconder');
-    document.getElementById('tbDm4270').classList.add('esconder');
-    document.getElementById('tbDm4770').classList.add('esconder');
-    document.getElementById('tbQfx').classList.add('esconder');
+    atualizarTabela('tbRaisecom')
 })
 
 Dm4100.addEventListener('click', () => {
-    abrirModal();
-    document.getElementById('tbCisco').classList.add('esconder');
-    document.getElementById('tbEdd').classList.add('esconder');
-    document.getElementById('tbRaisecom').classList.add('esconder');
-    document.getElementById('tbDm4100').classList.remove('esconder');
-    document.getElementById('tbDm4270').classList.add('esconder');
-    document.getElementById('tbDm4770').classList.add('esconder');
-    document.getElementById('tbQfx').classList.add('esconder');
+    atualizarTabela('tbDm4100')
 })
 
 Dm4270.addEventListener('click', () => {
-    abrirModal();
-    document.getElementById('tbCisco').classList.add('esconder');
-    document.getElementById('tbEdd').classList.add('esconder');
-    document.getElementById('tbRaisecom').classList.add('esconder');
-    document.getElementById('tbDm4100').classList.add('esconder');
-    document.getElementById('tbDm4270').classList.remove('esconder');
-    document.getElementById('tbDm4770').classList.add('esconder');
-    document.getElementById('tbQfx').classList.add('esconder');
+    atualizarTabela('tbDm4270')
 })
 
 Dm4770.addEventListener('click', () => {
-    abrirModal();
-    document.getElementById('tbCisco').classList.add('esconder');
-    document.getElementById('tbEdd').classList.add('esconder');
-    document.getElementById('tbRaisecom').classList.add('esconder');
-    document.getElementById('tbDm4100').classList.add('esconder');
-    document.getElementById('tbDm4270').classList.add('esconder');
-    document.getElementById('tbDm4770').classList.remove('esconder');
-    document.getElementById('tbQfx').classList.add('esconder');
+    atualizarTabela('tbDm4770')
 })
 
 Qfx.addEventListener('click', () => {
-    abrirModal();
-    document.getElementById('tbCisco').classList.add('esconder');
-    document.getElementById('tbEdd').classList.add('esconder');
-    document.getElementById('tbRaisecom').classList.add('esconder');
-    document.getElementById('tbDm4100').classList.add('esconder');
-    document.getElementById('tbDm4270').classList.add('esconder');
-    document.getElementById('tbDm4770').classList.add('esconder');
-    document.getElementById('tbQfx').classList.remove('esconder');
+    atualizarTabela('tbQfx')
 })
-
-
 
 document.getElementById('modalFechar')
     .addEventListener('click', fecharModal)
