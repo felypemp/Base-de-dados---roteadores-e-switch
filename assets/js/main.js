@@ -26,7 +26,7 @@ const fecharModal = () => {
 }
 
 
-/*========== FUNÇÃO ==========*/
+/*========== FUNÇÃO PARA ABRIR O MODAL PARA CADA EQUIPAMENTO ==========*/
 
 const atualizarTabela = (tabela) => {
     abrirModal();

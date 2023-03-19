@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/equipamentos.css">
+    <link rel="stylesheet" href="./assets/css/scripts.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&display=swap" rel="stylesheet">
+
+
+    <title>ITS BRASIL - BIBLITOTECA DE COMANDOS</title>
+</head>
+<body>
+    <header class="cabecalhoPrincipal">
+        <div class="containerPrincipal containerMenu container--desktop">
+            <a href="#"><img src="./assets/img/logo-itsbrasil.png" alt="Logo da empresa ITS Telecomunicações"></a>
+
+            <nav class="cabecalhoPrincipal-nav">
+                <a class="cabecalhoPrincipal-nav-link" href="index.html">Biblioteca de comandos</a>
+                <a class="cabecalhoPrincipal-nav-link" href="scripts.html">Scripts</a>
+                <a class="cabecalhoPrincipal-nav-link" href="emails.html">Exemplos E-mails</a>
+            </nav>
+        </div>
+
+        <div class="containerMenu container--mobile">
+            <div class="cabecalhoPrincipal-logo">
+                <a href="#"><img src="./assets/img/logo-itsbrasil.png" alt="Logo da empresa ITS Telecomunicações"></a>
+
+                <i class="fa fa-bars"></i>
+            </div>
+            <nav class="cabecalhoPrincipal-nav">
+                <a class="cabecalhoPrincipal-nav-link" href="index.html">Biblioteca de comandos</a>
+                <a class="cabecalhoPrincipal-nav-link" href="scripts.html">Scripts</a>
+                <a class="cabecalhoPrincipal-nav-link" href="emails.html">Exemplos E-mails</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="bg">
+        <div class="containerPrincipal">
+            <h1 class="titulo">Scripts</h1>
+            <hr>
+            <h2 class="subtitulo">Selecione o equipamento abaixo:</h2>
+
+            <ul class="conteudoPrincipal-equipamentos--script">
+                <li class="conteudoPrincipal-equipamentos-box--script">
+                    <a class="equipamentoLink--script" href="#" id="btnEdd">
+                        <img class="equipamentoImg" src="./assets/img/edd.png" alt="Equipamento EDD">
+                        <h3 class="equipamentoNome">EDD</h3>
+                    </a>
+                </li>
+                <li class="conteudoPrincipal-equipamentos-box--script">
+                    <a class="equipamentoLink--script" href="#" id="btnMk">
+                        <img class="equipamentoImg" src="./assets/img/rb760.png" alt="Equipamento EDD">
+                        <h3 class="equipamentoNome">Mikrotik</h3>
+                    </a>
+                </li>
+            </ul>
+            <hr>
+    
+            <div class="containerScript cardMk esconder">
+                <h3 class="nomeScript">SCRIPT MIKROTIK</h3>
+                <iframe class="caixa" src="./assets/scripts/mikrotik.txt" frameborder="0" scrolling="yes"></iframe>
+            </div>
+            <div class="containerScript cardEdd">
+                <h3 class="nomeScript">SCRIPT EDD</h3>
+                <iframe class="caixa" src="./assets/scripts/EDD (COM VLAN).pdf" frameborder="0" scrolling="yes"></iframe>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg">
+        <div class="containerPrincipal">
+            Copyright &copy; Felipe Matos Pereira - 
+            <a href="https://www.linkedin.com/in/felipematospereira/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/felypemp" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

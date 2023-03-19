@@ -35,6 +35,10 @@ footer a{
     color: #000000;
 }
 
+.esconder{
+    display: none;
+}
+
 /* ========== MENU ==========*/
 
 .cabecalhoPrincipal{
