@@ -3,7 +3,9 @@
 .conteudoPrincipal-equipamentos{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    column-gap: 10px;
+    padding: 0 50px;
 }
 
 .conteudoPrincipal-equipamentos-box{
@@ -11,8 +13,8 @@
     flex-direction: column;
     justify-content: space-around;
     background: transparent;
-    width: 28%;
-    height: 250px;
+    width: 25%;
+    height: 200px;
     border-radius: 5px;
     box-shadow: 0 5px 10px #2B2B2B;
     margin-top: 40px;
@@ -55,6 +57,9 @@
 
 
 @media screen and (max-width: 648px){
+    .conteudoPrincipal-equipamentos{
+        padding: 0;
+    }
 
     .conteudoPrincipal-equipamentos-box{
         height: auto;
