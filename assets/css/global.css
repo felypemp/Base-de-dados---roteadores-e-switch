@@ -87,12 +87,12 @@ footer a{
 
 .titulo {
     font-weight: bold;
-    font-size: 42px;;
+    font-size: 36px;;
     text-align: center;
 }
 
 .subtitulo {
-    font-size: 24px;
+    font-size: 20px;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -141,20 +141,20 @@ footer a{
 
 @media screen and (max-width: 648px){
     .titulo {
-        font-size: 32px;;
-    }
-    
-    .subtitulo{
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 428px){
-    .titulo {
         font-size: 28px;;
     }
     
     .subtitulo{
         font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 428px){
+    .titulo {
+        font-size: 24px;;
+    }
+    
+    .subtitulo{
+        font-size: 14px;
     }
 }
