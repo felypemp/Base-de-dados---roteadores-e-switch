@@ -85,7 +85,7 @@ footer a{
 
 /* ========== PRINCIPAL ==========*/
 .conteudoPrincipal{
-    min-height: 1200px;
+    min-height: 100vh;
 }
 
 .titulo {
