@@ -14,7 +14,6 @@ html,body {
 
 .containerPrincipal{
     max-width: 1680px;
-    min-height: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 1.3rem;
@@ -85,6 +84,9 @@ footer a{
 
 
 /* ========== PRINCIPAL ==========*/
+.conteudoPrincipal{
+    min-height: 1200px;
+}
 
 .titulo {
     font-weight: bold;
