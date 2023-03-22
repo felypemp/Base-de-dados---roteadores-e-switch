@@ -1,3 +1,33 @@
+.conteudoPrincipal-equipamentos--script{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.conteudoPrincipal-equipamentos-box--script{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: transparent;
+    width: 12%;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px #2B2B2B;
+    margin: 0 40px 40px 0;
+}
+
+.conteudoPrincipal-equipamentos-box--script:hover {
+	box-shadow: 0 5px 30px #2B2B2B;
+}
+
+.equipamentoLink--script{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
 .containerScript{
     display: flex;
     flex-direction: column;
@@ -24,4 +54,33 @@ iframe{
 
 .esconder {
     display: none;
+}
+
+
+/*=========== RESPONSIVO ===========*/
+
+@media screen and (max-width: 922px){
+
+    .conteudoPrincipal-equipamentos-box--script{
+        width: 18%;
+    }
+}
+
+@media screen and (max-width: 648px){
+
+    .conteudoPrincipal-equipamentos-box--script{
+        width: 22%;
+    }
+}
+
+@media screen and (max-width: 428px){
+
+    .conteudoPrincipal-equipamentos-box--script{
+        width: 45%;
+    }
+
+    iframe{
+        width: 90%;
+        height: 600px;
+    }
 }

@@ -5,7 +5,7 @@
 }
 
 .boxEmail{
-    padding:30px;
+    padding:25px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -28,6 +28,15 @@ textarea{
 }
 
 /*========== RESPONSIVO ==========*/
+
+@media screen and (max-width: 922px){
+    .boxEmail{
+        width: 42%;
+        padding:15px;
+        height: 300px;
+    }
+}
+
 @media screen and (max-width: 720px){
     .boxEmail{
         width: 38%;

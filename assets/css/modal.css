@@ -20,11 +20,11 @@
     flex-direction: column;
     gap:20px;
     width: 70vw;
-    margin: 15vh auto;
+    margin: 10vh auto;
     padding-bottom: 20px;
     background-color: white;
     box-shadow: 1px 1px 10px black;
-    max-height: 800px;
+    max-height: 650px;
     overflow: auto;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .tituloTabela{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -80,7 +80,7 @@ th, td{
 }
 
 .tabela th{
-    height: 50px;
+    height: 40px;
     background-color: #FFBA00;
     padding-left: 20px;
     font-size: 1.3rem;
@@ -88,7 +88,7 @@ th, td{
 }
 
 .tabela td{
-    height: 50px;
+    height: 40px;
     font-size: 1.1rem;
     padding-left: 20px;
 }
@@ -98,3 +98,65 @@ th, td{
 }
 
 
+/*========== RESPONSIVO ==========*/
+
+@media screen and (max-width: 922px){
+    .modal-conteudo{
+        width: 90vw;
+        margin: 15vh auto;
+        max-height: 600px;
+    }
+    
+    .tituloTabela{
+        font-size: 1.5rem;
+    }
+    
+    th, td{
+        padding-top: 15px;
+    }
+    
+    .tabela th{
+        font-size: 1.1rem;
+    }
+    
+    .tabela td{
+        height: 40px;
+        font-size: 0.9rem;
+    }
+    
+}
+
+@media screen and (max-width: 648px){
+    .tituloTabela{
+        font-size: 1.2rem;
+    }
+    
+    .tabela th{
+        font-size: 1rem;
+    }
+    
+    .tabela td{
+        height: 30px;
+        font-size: 0.8rem;
+    }
+}
+
+
+@media screen and (max-width: 428px){
+    .modal-conteudo{
+        max-height: 700px;
+    }
+
+    .tituloTabela{
+        font-size: 1rem;
+    }
+    
+    .tabela th{
+        font-size: 0.8rem;
+    }
+    
+    .tabela td{
+        height: 30px;
+        font-size: 0.7rem;
+    }
+}
