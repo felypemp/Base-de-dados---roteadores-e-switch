@@ -1,0 +1,50 @@
+.formularioEmail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.boxEmail{
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: transparent;
+    width: 40%;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px #2B2B2B;
+    margin-top: 40px;
+}
+
+.tituloEmail{
+    font-weight: 700;
+}
+
+textarea{
+    border: 1px solid #ccc;
+    resize:none;
+    padding: 10px;
+}
+
+/*========== RESPONSIVO ==========*/
+@media screen and (max-width: 720px){
+    .boxEmail{
+        width: 38%;
+        padding:15px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 648px){
+    .boxEmail{
+        width: 70%;
+    }
+ }
+
+
+@media screen and (max-width: 428px){
+    .boxEmail{
+        width: 90%;
+    }
+}

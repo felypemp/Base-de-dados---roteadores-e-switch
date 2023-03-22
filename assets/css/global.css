@@ -105,7 +105,7 @@ footer a{
 
 
 
-@media screen and (max-width: 740px){
+@media screen and (max-width: 720px){
     .container--desktop{
         display: none;
     }
