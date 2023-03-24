@@ -1,6 +1,6 @@
 .conteudoPrincipal-equipamentos--script{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     justify-content: center;
 }
 
@@ -75,8 +75,10 @@ iframe{
 
 @media screen and (max-width: 428px){
 
+
     .conteudoPrincipal-equipamentos-box--script{
-        width: 45%;
+    margin: 20px 40px;
+    width: 40%;
     }
 
     iframe{
